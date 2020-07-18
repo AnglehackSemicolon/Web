@@ -21,11 +21,13 @@ a{
 
 /* nav css */
 #nav{
-    width: 100%;
-    height: 39px;
+    width: 80%;
+    height: 90px;
     padding-top: 14px;
-    padding-bottom: 45px;
     z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #C2C2C2;
 }
 #Logo{
     position: absolute;
@@ -41,7 +43,7 @@ ul {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 17px;
+    font-size: 15px;
 }
 .Menu-item{
     float: left;
@@ -52,6 +54,7 @@ ul {
     position: absolute;
     display: inline-block;
     margin-top: 3px;
+    margin-right: 60px;
 }
 .Sign button{
     border:0;
@@ -59,5 +62,39 @@ ul {
     border-radius: 15px;
     width:95px;
     height: 33px;
-    font-size: 17px;
+    font-size: 15px;
+}
+
+#content{
+    width: 900px;
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .first-content h1 {
+    font-size:47px;
+    color:#83CF47;
+    margin-bottom: 0px;
+}
+#content .first-content h2 {
+    color: #AFAF9F;
+    margin-top: 7px;
+    font-weight: lighter;
+}
+#content .img-content img {
+    float:right;
+}
+#content .second-content {
+    padding-top:45px;
+    color:#404040;
+    font-size: 28px; 
+    font-weight: lighter;
+}
+#content .second-content span {
+    color: #7685AE;
+}
+#content .second-content .yellow-box {
+    background-color: #F2D06B;
+    color:white;
 }
