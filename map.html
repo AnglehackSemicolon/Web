@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./CSS/Map.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.71">
+    <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
+    <link rel="icon" href="IMG/Icon/favicon___.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <title>위치</title>
+</head>
+<body style = "position: fixed;" onload="document.inputForm.name.focus();" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <!-- <div id="BG">
+        <img src="IMG/SignUp/BG2.png" id="BG-img">
+    </div> -->
+
+    <div id="nav">
+        <a href="index.html" id="Logo">
+            <img id="Logo-img" src="img/logo.png">
+        </a>
+
+        <ul class="Menu">
+            <li class="Menu-item"><a href="challenge.html">도전과제</a></li>
+            <li class="Menu-item"><a href="rank.html"
+                
+                
+                
+                
+                >랭킹</a></li>
+            <li class="Menu-item"><a href="store.html">포인트 상점</a></li>
+            <li class="Menu-item"><a href="#">마이페이지</a></li>
+        </ul>
+
+        <div class="Sign">
+            <!-- 로그인, 회원가입 버튼-->
+            <button><a href="#">로그인</a></button>
+            <button><a href="#">회원가입</a></button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="center-content">
+            내 근처 <span>용기 가게</span>의 <br>
+            <span>위치</span>를 확인하세요!
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="contents">
+    
+                <div class="window">
+                    <div id="map"></div>
+
+                    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0f9a52343eadb6e074e2cd73eea45869&libraries=clusterer"></script>
+                    <!-- <script src="./JS/data.js"></script> -->
+                    <script src="./js/map.js"></script>
+                </div> 
+            </div>
+        </div>
+    </div>
+</html>
