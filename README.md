@@ -3,6 +3,7 @@
 
 프론트 : 양아름    
 백 : 이예슬, 윤희나
+디자인 : 윤희나
 
 ## 실행 
 github 링크 WEB / AngleHackMainWeb 을 다운받으신 뒤,    
