@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/index.css')
+    title 용기를 담다;
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/Logo.png')
+      ul.Menu
+        li.Menu-item
+          a(href='challenge.html') 도전과제
+        li.Menu-item
+          a(href='rank.html') 랭킹
+        li.Menu-item
+          a(href='#') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입    
+    #content
+      .img-content
+        img(src='../img/GreenEarth.png')
+      .first-content
+        h1 HOLD COURAGE
+        h2 용기를 담다 ;
+      .second-content
+        | 도전과제를 
+        span 달성
+        | 한 뒤 
+        span 포인트
+        | 를 얻으세요! 
+        br
+        |             포인트를 얻은 뒤 
+        span 레벨업
+        | 을 해보세요! 
+        br
+        |             여러분의 
+        span.yellow-box 착한 영향력이 환경을
+        |  살립니다!

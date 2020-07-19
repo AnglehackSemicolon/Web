@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/Login.css')
+    script(src='https://www.gstatic.com/firebasejs/5.0.4/firebase.js')
+    title Document
+  body
+    #container
+      .nav
+        #nav
+          a#Logo(href='/main')
+            img#Logo-img(src='../img/Logo.png')
+          ul.Menu
+            li.Menu-item
+              a(href='#anchor1') 도전과제
+            li.Menu-item
+              a(href='#anchor2') 랭킹
+            li.Menu-item
+              a(href='#anchor3') 포인트 상점
+            li.Menu-item
+              a(href='/MyPage') 마이페이지
+          .Sign
+            // 로그인, 회원가입 버튼
+            button
+              a(href='/Login') 로그인
+            button
+              a(href='/SignUp') 회원가입
+      .content
+        form.Login-Post(method='post', action='/Login')
+          p#head 로그인
+          p#email EMAIL
+          input#em(type='email' name="userEmail" placeholder='이메일을 입력해주세요')
+          p#password PASSWORD
+          input#pw(type='password' name="PW" placeholder='비밀번호을 입력해주세요')
+          button#submit(type='submit') LOGIN
+          a(href='/SignUp')
+            button#SignUp SIGN UP

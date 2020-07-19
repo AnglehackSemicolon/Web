@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/MyPage.css')
+    script(src='https://www.gstatic.com/firebasejs/5.0.4/firebase.js')
+    
+    title 마이페이지
+  body
+    #container
+      .nav
+        #nav
+          a#Logo(href='/main')
+            img#Logo-img(src='../img/Logo.png')
+          ul.Menu
+            li.Menu-item
+              a(href='#anchor1') 도전과제
+            li.Menu-item
+              a(href='#anchor2') 랭킹
+            li.Menu-item
+              a(href='#anchor3') 포인트 상점
+            li.Menu-item
+              a(href='/MyPage') 마이페이지
+          .Sign
+            // 로그인, 회원가입 버튼
+            button
+                a(href='/Login') 로그인
+            button
+                a(href='/SignUp') 회원가입    
+      .content
+        p#head 마이페이지
+        .cont-top
+          .item1
+            p.item1-head 개인정보 변경
+            img(src='../img/write 1.png')
+          .item2
+            p.item2-head 내 포인트
+            img(src='../img/money 1.png')
+          .item3
+            p.item3-head 내 레벨
+            img(src='../img/seed 1.png')
+        .cont-bottom
+          p.head 자주 묻는 질문
+          hr
+          details
+            summary [내 포인트] 내 포인트는 어디에서 확인하나요?
+            .summary-chevron-up [마이페이지] 안에 내 포인트에서 확인하실 수 있습니다.
+          details
+            summary [내 레벨] 레벨은 어떻게 오르는 것인가요?
+            .summary-chevron-up 도전과제를 완수한 뒤, 포인트가 오르면 레벨이 오릅니다.
+          details
+            summary [내 포인트] 내 포인트는 어떻게 사용하나요?
+            .summary-chevron-up 포인트는 실제 상점에서 사용하실 수 있습니다.
+          details
+            summary [내 레벨] 레벨은 몇 단계까지 있나요?
+            .summary-chevron-up 레벨은 총 5단계로 [씨앗] - [새싹] - [꽃] - [열매] - [나무]로 이루어져 있습니다! [
+    // The core Firebase JS SDK is always required and must be listed first
+    script(src='/__/firebase/7.16.1/firebase-app.js')
+    //
+      TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries
+    script(src='/__/firebase/7.16.1/firebase-analytics.js')
+    // Initialize Firebase
+    script(src='/__/firebase/init.js')

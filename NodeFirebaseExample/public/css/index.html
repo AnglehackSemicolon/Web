@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="../fullpage/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <script src="../fullpage/fullpage.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div id="nav">   
+                <a href="index.html" id="Logo">
+                    <!-- <img id="Logo-img" src="IMG/Main/logo.png"> -->
+                </a>
+        
+                <ul class="Menu">
+                    <li class="Menu-item"><a href = "#anchor1">도전과제</a></li>
+                    <li class="Menu-item"><a href = "#anchor2">랭킹</a></li>
+                    <li class="Menu-item"><a href = "#anchor3">포인트 상점</a></li>
+                    <li class="Menu-item"><a href = "#anchor4">마이페이지</a></li>
+                </ul>
+        
+                <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                    <button><a href="Login.html">로그인</a></button>
+                    <button><a href="#">회원가입</a></button>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="section" id="section1">Section 2</div>
+        <div class="section" id="section2">Section 3</div>
+        <div class="section" id="section3">Section 4</div>
+    </div>
+
+    <script>
+       $( document ).ready( new fullpage('#fullpage', {
+            sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],                //options here
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            autoScrolling:true,
+            menu: '#menu',
+            scrollHorizontally: true,
+            verticalCentered: true,
+            anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4'],
+            navigation: true,
+            navigationPosition: 'right',
+        }));
+
+    </script>
+</body>
+</html>
