@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
 }
+
 #content{
     width: 900px;
     padding-top: 50px;
@@ -18,8 +19,6 @@
 #content .center-content span {
     color: #7685AE;
 }
-/*GLOBALS*/
-
 
 #slider-wrap {
     width: 100%;
@@ -41,22 +40,6 @@
     width: 600px;
     height: 400px;
 }
-
-#slider-wrap ul#slider li>div {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-}
-
-#slider-wrap ul#slider li>div h3 {
-    font-size: 36px;
-    text-transform: uppercase;
-}
-
-#slider-wrap ul#slider li>div span {
-    font-size: 21px;
-}
-
 #slider-wrap ul#slider li img {
     display: block;
     width: 100%;

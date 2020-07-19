@@ -1,5 +1,6 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
+    padding: 0px;
 }
 body
 {
@@ -63,4 +64,12 @@ ul {
     width:95px;
     height: 33px;
     font-size: 15px;
+}
+.Menu-item .selected {
+    color: #267933;
+    font-weight: bold;
+    border-top:2px solid #267933;
+}
+.Menu-item a:hover {
+    color: #267933;
 }
