@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./reset-ani.css">
+    <link rel="stylesheet" type="text/css" href="./CanShow.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>글쓰기</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html" id="Logo">
+            <img id="Logo-img" src="img/logo.png">
+        </a>
+
+        <ul class="Menu">
+            <li class="Menu-item"><a href="challenge.html" class="selected tracking-in-expand">도전과제</a></li>
+            <li class="Menu-item"><a href="rank.html" >랭킹</a></li>
+            <li class="Menu-item"><a href="store.html">포인트 상점</a></li>
+            <li class="Menu-item"><a href="#">마이페이지</a></li>
+        </ul>
+
+        <div class="Sign">
+            <!-- 로그인, 회원가입 버튼-->
+            <button><a href="#">로그인</a></button>
+            <button><a href="#">회원가입</a></button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="center-content">
+            글 작성하기
+        </div>
+        <table class="table table-bordered">
+            <tbody>
+                <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                    <tr>
+                        <th>도전과제 선택 </th>
+                        <td><input type="text" placeholder="도전과제를 입력하세요. " name="subject" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <th>제목 </th>
+                        <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <th>내용 </th>
+                        <td><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control" style="height: 200px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>첨부파일 </th>
+                        <td><input type="file" name="filename" class="form-data"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="게시하기" class="btn btn-outline-success" style="text-align: center;"/>
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
