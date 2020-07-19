@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/CanWrite.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    title 글쓰기
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/logo.png')
+      ul.Menu
+        li.Menu-item
+          a.selected.tracking-in-expand(href='/challenge') 도전과제
+        li.Menu-item
+          a(href='/rank') 랭킹
+        li.Menu-item
+          a(href='/pointshop') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입
+    #content
+      .center-content
+        | 글 작성하기
+      table.table.table-bordered
+        tbody
+          form(action='write_ok.jsp', method='post', enctype='multiplart/form-data')
+          tr
+            th 도전과제 선택 
+            td
+              input.form-control(type='text', placeholder='도전과제를 입력하세요. ', name='subject')
+          tr
+            th 제목 
+            td
+              input.form-control(type='text', placeholder='제목을 입력하세요. ', name='subject')
+          tr
+            th 내용 
+            td
+              textarea.form-control(cols='10', placeholder='내용을 입력하세요. ', name='content', style='height: 200px;')
+          tr
+            th 첨부파일 
+            td
+              input.form-data(type='file', name='filename')
+          tr
+            td(colspan='2')
+              input.btn.btn-outline-success(type='button', value='게시하기', style='text-align: center;')

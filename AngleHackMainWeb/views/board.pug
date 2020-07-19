@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/board.css')
+    title 랭킹
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/logo.png')
+      ul.Menu
+        li.Menu-item
+          a.selected.tracking-in-expand(href='/challenge') 도전과제
+        li.Menu-item
+          a(href='/rank') 랭킹
+        li.Menu-item
+          a(href='/pointshop') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입
+    #content
+      .center-content
+        | 용기 게시판
+      .search-content
+        a(href='/CanWrite')
+          input.write(type='button', value='인증 글 작성하기')
+      .rank-content
+        table
+          tbody
+            tr
+              td(style='border-top-left-radius: 5px; border-bottom-left-radius: 5px;') 도전과제
+              td 제목
+              td(style='border-top-right-radius: 5px; border-bottom-right-radius: 5px;') 작성자
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+            tr
+              td(style='width:200px;') [나만의 재활용팁]
+              td(style='width:600px;') 저의 재활용팁은 바로 이것입니다. 다들 봐주세요!
+              td(style='width:200px;') 이예슬
+      .page-content
+        a(href='#') 1
+        |  
+        a(href='#') 2
+        |  |
+        a(href='#') 3
+        |  |
+        a(href='#') 4
+        |  |
+        a(href='#') 5

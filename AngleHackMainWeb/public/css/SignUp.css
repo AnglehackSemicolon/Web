@@ -1,0 +1,148 @@
+.content
+{
+    position: relative;
+}
+
+.Login-Post
+{
+    position: absolute;
+    width:545px;
+    height: 800px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#head
+{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+}
+
+#name
+{   
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+#Name
+{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 320px;
+    height: 35px;
+    transform: translateX(-45%);
+}
+
+#email
+{
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+#Em
+{
+    position: absolute;
+    top: 37%;
+    left: 45%;
+    width: 320px;
+    height: 35px;
+    transform: translateX(-45%);
+}
+
+#password
+{
+    position: absolute;
+    top: 44%;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+#Pw
+{
+    position: absolute;
+    top: 49%;
+    left: 45%;
+    width: 320px;
+    height: 35px;
+    transform: translateX(-45%);
+}
+
+
+#phone
+{
+    position: absolute;
+    top: 57%;
+    left: 22%;
+    transform: translateX(-22%);
+}
+
+#PhoneNumber
+{
+    position: absolute;
+    top: 62%;
+    left: 45%;
+    width: 320px;
+    height: 35px;
+    transform: translateX(-45%);
+}
+
+#user
+{
+    position: absolute;
+    top: 75%;
+    left: 22%; 
+    transform: translateX(22%);
+}
+
+#userText
+{
+    position: absolute;
+    top: 75%;
+    left: 25%; 
+    transform: translateX(25%);
+}
+
+#shop
+{
+    position: absolute;
+    top: 75%;
+    left: 50%; 
+    transform: translateX(50%);
+}
+
+#shopText
+{
+    position: absolute;
+    top: 75%;
+    left: 51%; 
+    transform: translateX(51%);
+}
+
+#submit
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 320px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190);
+    outline:0;
+    border:0;
+    transform: translateX(-50%);
+}
+button:active 
+{
+    transform: scale(0.90);
+}

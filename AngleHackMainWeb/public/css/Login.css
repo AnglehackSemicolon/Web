@@ -1,0 +1,85 @@
+.content
+{
+    position: relative;
+}
+
+.Login-Post
+{
+    position: absolute;
+    width:540px;
+    height: 650px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#head
+{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+}
+
+#email
+{   
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+#em
+{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#password
+{   
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+#pw
+{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#submit
+{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#SignUp
+{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}

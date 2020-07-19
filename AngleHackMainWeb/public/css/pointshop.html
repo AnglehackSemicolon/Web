@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href= "./pointshop.css">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <title>마이페이지</title>
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <div id="nav">   
+                <a href="index.html" id="Logo">
+                    <!-- <img id="Logo-img" src="IMG/Main/logo.png"> -->
+                </a>
+        
+                <ul class="Menu">
+                    <li class="Menu-item"><a href = "#anchor1">도전과제</a></li>
+                    <li class="Menu-item"><a href = "#anchor2">랭킹</a></li>
+                    <li class="Menu-item"><a href = "#anchor3">포인트 상점</a></li>
+                    <li class="Menu-item"><a href = "#anchor4">마이페이지</a></li>
+                </ul>
+        
+                <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                    <button><a href="#">로그인</a></button>
+                    <button><a href="#">회원가입</a></button>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="content">
+                <p id="head">마이페이지</p>
+                <div class="cont-top">
+                    <div class="item1">
+                        <p class="item1-head">개인정보 변경</p>
+                        <img src="../img/write 1.png">
+                    </div>
+
+                    <div class="item2">
+                        <p class="item2-head">내 포인트</p>
+                        <img src="../img/money 1.png">
+                    </div>
+                    
+                    <div class="item3">
+                        <p class="item3-head">내 레벨</p>
+                        <img src="../img/seed 1.png">
+                    </div>
+                </div>
+
+                <div class="cont-bottom">
+                    <p class="head">자주 묻는 질문</p>
+                    <hr>
+                    <details>
+                        <summary>[내 포인트] 내 포인트는 어디에서 확인하나요?</summary>
+                        <div class="summary-chevron-up">[마이페이지] 안에 내 포인트에서 확인하실 수 있습니다.</div>
+                        
+                    </details>
+                    <details>
+                        <summary>[내 레벨] 레벨은 어떻게 오르는 것인가요?</summary>
+                        <div class="summary-chevron-up">도전과제를 완수한 뒤, 포인트가 오르면 레벨이 오릅니다.</div>
+                    </details>
+                    <details>
+                        <summary>[내 포인트] 내 포인트는 어떻게 사용하나요?</summary>
+                        <div class="summary-chevron-up">포인트는 실제 상점에서 사용하실 수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>[내 레벨] 레벨은 몇 단계까지 있나요?</summary>
+                        <div class="summary-chevron-up">레벨은 총 5단계로 [씨앗] - [새싹] - [꽃] - [열매] - [나무]로 이루어져 있습니다! [</div>
+                    </details>
+                </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.16.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.16.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='css/SignUp.css')
+    script(src='https://www.gstatic.com/firebasejs/5.0.4/firebase.js')
+    title Document
+  body
+    #container
+      .nav
+        #nav
+          a#Logo(href='/main')
+            img#Logo-img(src='../img/Logo.png')
+          ul.Menu
+            li.Menu-item
+              a(href='/challenger') 도전과제
+            li.Menu-item
+              a(href='/rank') 랭킹
+            li.Menu-item
+              a(href='/pointshop') 포인트 상점
+            li.Menu-item
+              a(href='/MyPage') 마이페이지
+          .Sign
+            // 로그인, 회원가입 버튼
+            button
+              a(href='/Login') 로그인
+            button
+              a(href='/SignUp') 회원가입
+      .content
+        form.Login-Post(method='post', action='./SignUp')
+          p#head 회원가입
+          p#name NAME
+          input#Name(type='text' name="Name")
+          p#email EMAIL
+          input#Em(type='email' name="userEmail")
+          p#password PASSWORD
+          input#Pw(type='password' name="userPassword")
+          p#phone PHONENUMBER
+          input#PhoneNumber(type='text' name="userPhoneNumber")
+          input#user(type='radio', name='user_type', value='일반유저' checked)
+          label#userText(for='user') 일반유저
+          input#shop(type='radio', name='user_type', value='소상공인' )
+          label#shopText(for='shop') 소상공인
+          button#submit(type='submit') SIGN UP
+    // The core Firebase JS SDK is always required and must be listed first
+    script(src='/__/firebase/7.16.1/firebase-app.js')
+    //
+      TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries
+    script(src='/__/firebase/7.16.1/firebase-analytics.js')
+    // Initialize Firebase
+    script(src='/__/firebase/init.js')

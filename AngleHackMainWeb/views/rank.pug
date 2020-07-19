@@ -1,0 +1,100 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/rank.css')
+    title 랭킹
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/logo.png')
+      ul.Menu
+        li.Menu-item
+          a(href='/challenge') 도전과제
+        li.Menu-item
+          a.selected.tracking-in-expand(href='/rank') 랭킹
+        li.Menu-item
+          a(href='/pointshop') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입   
+    #content
+      .center-content
+        | 랭킹
+      .rank-content
+        table
+          tbody
+            tr
+              td(style='border-top-left-radius: 5px; border-bottom-left-radius: 5px;') 순위
+              td 이메일
+              td 이름
+              td(style='border-top-right-radius: 5px; border-bottom-right-radius: 5px;') 성공한 도전과제 수
+            tr
+              td(style='width:100px;') 1
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 2
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 3
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 4
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 5
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 6
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 7
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 8
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 9
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+            tr
+              td(style='width:100px;') 10
+              td(style='width:400px;') s2018s10@e-mirim.hs.kr
+              td(style='width:180px;') 양아름
+              td(style='width:180px;') 10
+      .page-content
+        a(href='#') 1
+        |  
+        a(href='#') 2
+        |  |
+        a(href='#') 3
+        |  |
+        a(href='#') 4
+        |  |
+        a(href='#') 5

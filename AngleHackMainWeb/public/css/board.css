@@ -1,0 +1,65 @@
+#content{
+    width: 800px;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#content .center-content {
+    color:#77BF0B;
+    font-size: 35px; 
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+#content .center-content span {
+    color: #7685AE;
+}
+#content .search-content form {
+    float: left;
+}
+#content .search-content form input {
+    background-color: #F0F0F0;
+    border:0px;
+    height:30px;
+    width: 180px;
+    border-radius: 5px;
+    padding-left:15px;
+}
+#content .search-content form button {
+    background-color: #F0F0F0;
+    border:0px;
+    height:30px;
+    width: 60px;
+    border-radius: 5px;
+}
+/* 게시글 목록 */
+.rank-content table {
+    widows: 1300px;
+    margin:auto;
+    margin-top:8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.rank-content tr:nth-child(1){
+    background-color: #F2D06B;
+    height:35px;
+    font-size: 16px;
+}
+.rank-content tr:nth-child(2n+3){
+    background-color: #F0F0F0;
+}
+.rank-content td:nth-child(n+1){
+    height:40px; 
+}
+.page-content {
+    text-align: center;
+    margin-bottom: 70px;
+    color:#404040;
+}
+.write {
+    background-color: #F0F0F0;
+    border: 0px;
+    height:30px;
+    width: 120px;
+    /* margin-left: 600px; */
+}

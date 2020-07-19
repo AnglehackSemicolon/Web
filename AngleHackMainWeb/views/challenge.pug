@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/challenge.css')
+    title 챌린지
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/logo.png')
+      ul.Menu
+        li.Menu-item
+          a.selected.tracking-in-expand(href='/challenge') 도전과제
+        li.Menu-item
+          a(href='/rank') 랭킹
+        li.Menu-item
+          a(href='/pointshop') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입
+    #content
+      .center-content
+        | 도전과제를 
+        span 달성
+        | 한 뒤 
+        br
+        span 포인트
+        | 를 얻으세요!
+      br
+      .slider
+        #slider-wrap
+          ul#slider
+            li
+              img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            li
+              img(src='https://user-images.githubusercontent.com/48716298/87869769-21c90900-c9dd-11ea-9200-cd6976c104ea.jpg')
+            li
+              img(src='https://user-images.githubusercontent.com/48716298/87870010-34444200-c9df-11ea-9a94-7ad1131498c2.jpg')
+            li
+              img(src='https://user-images.githubusercontent.com/48716298/87870011-34dcd880-c9df-11ea-894f-edb897f70f26.jpg')
+            li
+              img(src='https://user-images.githubusercontent.com/48716298/87870012-360e0580-c9df-11ea-9f02-aa28a81816fe.jpg')
+          #next.slider-btns
+            span ▶
+          #previous.slider-btns
+            span ◀
+          #slider-pagination-wrap
+            ul
+        script(src='../js/slider.js')

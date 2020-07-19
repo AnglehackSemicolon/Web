@@ -1,0 +1,49 @@
+#content{
+    width: 900px;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#content .center-content {
+    color:#77BF0B;
+    font-size: 35px; 
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+#content li {
+    float:left;
+}
+#content ul {
+    width: 860px;
+    text-align: center;
+}
+#content button {
+    margin-left: 20px;
+    background-color: #F0F0F0;
+    border: 0px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#content li .challenge-content {
+    margin-right: 10px;
+    margin-bottom: 20px
+}
+#content li .challenge-content img {
+    width: 270px;
+}
+#content li .challenge-content h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#content li .challenge-content input {
+    background-color: #F2D06B;
+    border: 0px;
+    width: 100px;
+    height: 28px;
+    border-radius: 7px;
+}
+#content li .challenge-content .giveup {
+    background-color: #E1E1E1;
+}

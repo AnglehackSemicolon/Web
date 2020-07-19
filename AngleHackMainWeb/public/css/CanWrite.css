@@ -1,0 +1,14 @@
+#content{
+    width: 800px;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .center-content {
+    color:#77BF0B;
+    font-size: 35px; 
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}

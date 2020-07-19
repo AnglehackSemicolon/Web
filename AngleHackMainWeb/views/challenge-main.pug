@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/reset-ani.css')
+    link(rel='stylesheet', type='text/css', href='../css/challenge-main.css')
+    title 도전과제 목록
+  body
+    #nav
+      a#Logo(href='/main')
+        img#Logo-img(src='../img/logo.png')
+      ul.Menu
+        li.Menu-item
+          a.selected.tracking-in-expand(href='/challenge') 도전과제
+        li.Menu-item
+          a(href='/rank') 랭킹
+        li.Menu-item
+          a(href='/pointshop') 포인트 상점
+        li.Menu-item
+          a(href='/MyPage') 마이페이지
+      .Sign
+        // 로그인, 회원가입 버튼
+        button
+            a(href='/Login') 로그인
+        button
+            a(href='/SignUp') 회원가입
+    #content
+      .center-content
+        | 도전과제
+      a(href='/board')
+        button 내 용기 게시하기
+      ul
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input(type='button', value='도전하기')
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input.giveup(type='button', value='포기하기')
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input(type='button', value='도전하기')
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input(type='button', value='도전하기')
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input(type='button', value='도전하기')
+        li
+          .challenge-content
+            img(src='https://user-images.githubusercontent.com/48716298/87869740-f3e3c480-c9dc-11ea-8d3e-cdea2dc9e2f0.jpg')
+            h3 북극곰을 지켜주세요!
+            input.giveup(type='button', value='포기하기')
